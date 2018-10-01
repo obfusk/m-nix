@@ -12,7 +12,11 @@ python3Packages.buildPythonApplication rec {
   ];
   src = builtins.path {
     name        = "m-gui";
-    path        = ./.;
+    path        = builtins.fetchGit {
+      url = "https://github.com/obfusk/m.git";
+      rev = "23ec2754abc9e945e5f01fcc64c13c833faf2e33";
+      ref = "23ec275-tag-you-are-it";
+    };
     filter      = lib.cleanSourceFilter;
   };
   meta = {

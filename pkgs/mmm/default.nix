@@ -7,7 +7,11 @@ python3Packages.buildPythonApplication rec {
   preConfigure  = "make README.rst";
   src = builtins.path {
     name        = "m";
-    path        = ./.;
+    path        = builtins.fetchGit {
+      url = "https://github.com/obfusk/m-gui.git";
+      rev = "6883401b56fcf116a42be3df28220cabccb47e8d";
+      ref = "6883401-tag-you-are-it";
+    };
     filter      = lib.cleanSourceFilter;
   };
   meta = {
