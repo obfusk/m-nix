@@ -26,8 +26,8 @@ mpv).
 
 m-gui is the GUI wrapper for m.
 
-[→ m README @ GitHub](https://github.com/obfusk/m#readme),
-[→ m-gui README @ GitHub](https://github.com/obfusk/m-gui#readme)
+[→ m README](https://github.com/obfusk/m#readme),
+[→ m-gui README](https://github.com/obfusk/m-gui#readme)
 
 ## Installing
 
