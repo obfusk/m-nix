@@ -34,21 +34,24 @@ m-gui is the GUI wrapper for m.
 See the m and m-gui repositories themselves for git, pip (pypi), or
 Debian installation instructions.
 
+NB: the packages are called `mmm` and `mmm-gui` instead of `m` and
+`m-gui`.
+
 ### NixOS
 
 ```bash
 $ cd /some/convenient/dir
 $ git clone https://github.com/obfusk/m-nix.git obfusk-m-nix
 $ cd obfusk-m-nix
-$ nix-env -i -f . -A m      # to install only m
-$ nix-env -i -f . -A m-gui  # to install m and m-gui
+$ nix-env -i -f . -A mmm        # to install only m
+$ nix-env -i -f . -A mmm-gui    # to install m and m-gui
 ```
 
 or even:
 
 ```bash
-$ nix-env -i -f https://github.com/obfusk/m-nix/archive/master.tar.gz -A m
-$ nix-env -i -f https://github.com/obfusk/m-nix/archive/master.tar.gz -A m-gui
+$ nix-env -i -f https://github.com/obfusk/m-nix/archive/master.tar.gz -A mmm
+$ nix-env -i -f https://github.com/obfusk/m-nix/archive/master.tar.gz -A mmm-gui
 ```
 
 ## TODO
