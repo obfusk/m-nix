@@ -1,6 +1,6 @@
 { pkgs ? import <nixpkgs> {} }:
 
-with pkgs;
+with pkgs; with python3Packages;
 
 rec {
   mmm     = callPackage ./pkgs/mmm     {};
