@@ -5,14 +5,10 @@ python3Packages.buildPythonApplication rec {
   version       = "0.4.2";
   buildInputs   = [ pandoc ];
   preConfigure  = "make README.rst";
-  src = builtins.path {
-    name        = "m";
-    path        = builtins.fetchGit {
-      url = "https://github.com/obfusk/m-gui.git";
-      rev = "6883401b56fcf116a42be3df28220cabccb47e8d";
-      ref = "6883401-tag-you-are-it";
-    };
-    filter      = lib.cleanSourceFilter;
+  src = builtins.fetchGit {
+    url = "https://github.com/obfusk/m.git";
+    rev = "23ec2754abc9e945e5f01fcc64c13c833faf2e33";
+    ref = "23ec275-tag-you-are-it";
   };
   meta = {
     description = "minimalistic media manager";

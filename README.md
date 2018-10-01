@@ -43,15 +43,14 @@ NB: the packages are called `mmm` and `mmm-gui` instead of `m` and
 $ cd /some/convenient/dir
 $ git clone https://github.com/obfusk/m-nix.git obfusk-m-nix
 $ cd obfusk-m-nix
-$ nix-env -i -f . -A mmm        # to install only m
-$ nix-env -i -f . -A mmm-gui    # to install m and m-gui
+$ nix-env -i -f . -A mmm mmm-gui    # both mmm and mmm-gui
+$ nix-env -i -f . -A mmm            # just mmm
 ```
 
 or even:
 
 ```bash
-$ nix-env -i -f https://github.com/obfusk/m-nix/archive/master.tar.gz -A mmm
-$ nix-env -i -f https://github.com/obfusk/m-nix/archive/master.tar.gz -A mmm-gui
+$ nix-env -i -f https://github.com/obfusk/m-nix/archive/master.tar.gz -A mmm mmm-gui
 ```
 
 ## TODO

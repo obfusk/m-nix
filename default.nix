@@ -4,5 +4,5 @@ with pkgs;
 
 rec {
   mmm     = callPackage ./pkgs/mmm     {};
-  mmm-gui = callPackage ./pkgs/mmm-gui {};
+  mmm-gui = callPackage ./pkgs/mmm-gui { inherit mmm; };
 }
