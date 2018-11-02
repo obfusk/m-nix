@@ -2,7 +2,7 @@
 
     File        : README.md
     Maintainer  : Felix C. Stegerman <flx@obfusk.net>
-    Date        : 2018-10-01
+    Date        : 2018-11-02
 
     Copyright   : Copyright (C) 2018  Felix C. Stegerman
     Version     : v0.0.1
@@ -10,10 +10,7 @@
 
 <!-- }}}1 -->
 
-<!--
 [![Build Status](https://travis-ci.org/obfusk/m-nix.svg?branch=master)](https://travis-ci.org/obfusk/m-nix)
--->
-
 [![GPLv3+](https://img.shields.io/badge/license-GPLv3+-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
 
 ## Description
