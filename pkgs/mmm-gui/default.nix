@@ -4,9 +4,8 @@
 python3Packages.buildPythonApplication rec {
   pname                 = "mmm-gui";
   version               = "0.1.1";
-  buildInputs           = [ pandoc ];
   preConfigure          = "make README.rst";
-  nativeBuildInputs     = [ wrapGAppsHook ];
+  nativeBuildInputs     = [ pandoc wrapGAppsHook ];
   propagatedBuildInputs = [
     mmm pygobject3 gobjectIntrospection gtk3 gnome3.vte
   ];
